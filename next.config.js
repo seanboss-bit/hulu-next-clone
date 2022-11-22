@@ -7,9 +7,6 @@ const withPWA = require("next-pwa")({
 });
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    forceSwcTransforms: true,
-  },
   images: {
     domains: ["links.papareact.com", "image.tmdb.org"],
   },

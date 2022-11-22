@@ -6,6 +6,7 @@ const withPWA = require("next-pwa")({
   skipWaiting: true,
 });
 const nextConfig = {
+  reactStrictMode: true,
   images: {
     domains: ["links.papareact.com", "image.tmdb.org"],
   },

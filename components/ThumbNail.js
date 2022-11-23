@@ -1,11 +1,12 @@
 import { HandThumbUpIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 import { forwardRef } from "react";
 
 const ThumbNail = forwardRef(({ movie }, ref) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
   return (
-    <div
+    <Link href={`/info/${movie.id}`}
       ref={ref}
       className="group cursor-pointer p-3 transition duration-200 ease-in transform md:hover:scale-105 hover:z-50"
     >
@@ -26,7 +27,7 @@ const ThumbNail = forwardRef(({ movie }, ref) => {
           {movie.vote_count}
         </p>
       </div>
-    </div>
+    </Link>
   );
 });
 

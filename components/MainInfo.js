@@ -31,14 +31,7 @@ const MainInfo = ({ movie }) => {
         ease: [0.6, -0.05, 0.01, 0.99],
       },
     },
-    exit: {
-      y: -60,
-      opacity: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.6, -0.05, 0.01, 0.99],
-      },
-    },
+
   };
   return (
     <div className="md:grid container mx-auto md:grid-cols-2">
@@ -68,7 +61,6 @@ const MainInfo = ({ movie }) => {
         className="p-4"
         initial="initial"
         animate="animate"
-        exit="exit"
         variants={stagger}
       >
         <motion.h2
